@@ -2,4 +2,4 @@
 url=$(curl -k --silent "api.nbp.pl/api/exchangerates/rates/a/$1")
 var=$(echo $url | grep -Po '"mid":......')
 mid=$(echo $var | cut -c 7-)
-echo Kurs $1: $mid
+echo Kurs $1: $mid PLN
